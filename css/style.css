@@ -1,0 +1,123 @@
+body{
+  background-color:var(--main-bg);
+  color: var(--main-text);
+}
+.header{
+    margin-top:5rem !important;
+}
+.header_image{
+    width:80%;
+}
+.social_icon{
+    width:4rem;
+}
+.social_icon_nav{
+    width:1.3rem;
+}
+.about_me_body{
+    font-size: 1.7rem;
+    text-align:justify;
+}
+.card-header  span{
+    font-size: 1rem;
+}
+.bg-warning{
+    background-color:#CFF4CF!important;
+}
+.wave {
+    animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
+    animation-duration: 2.5s;        /* Change to speed up or slow down */
+    animation-iteration-count: infinite;  /* Never stop waving :) */
+    transform-origin: 70% 70%;       /* Pivot around the bottom-left palm */
+    display: inline-block;
+  }
+  .responsive_iframe{
+      width: 100%;
+      overflow: hidden;
+      border: 2px solid #CFF4CF;
+  }
+  
+  @keyframes wave-animation {
+      0% { transform: rotate( 0.0deg) }
+     10% { transform: rotate(14.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
+     20% { transform: rotate(-8.0deg) }
+     30% { transform: rotate(14.0deg) }
+     40% { transform: rotate(-4.0deg) }
+     50% { transform: rotate(10.0deg) }
+     60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
+    100% { transform: rotate( 0.0deg) }
+  } 
+@media (max-width: 560px) {
+    .about_me_body{
+        font-size:1.25rem;
+    }
+    .auto_box{
+        text-align: center;
+    }
+    .projects_box{
+        content-visibility: hidden;
+    }
+    .hide{
+        display: none;
+    }
+    .just_center{
+        justify-content: center!important;
+    }
+}
+
+
+/* TIMELINE CSS */
+.timeline {
+    margin: 0 auto;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 3px 1fr;
+    font-family: "Fira Sans", sans-serif;
+    color: #009578;
+  }
+  
+  .timeline__component {
+    margin: 0 0.5rem 1rem 0.5rem;
+  }
+  
+  .timeline__component--bg {
+    background: rgba(0, 0, 0, 0);
+    box-shadow: 0 0 0.2rem rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+  }
+  
+  /* LEAVE TILL LAST */
+  .timeline__component--bottom {
+    margin-bottom: 0;
+  }
+  
+  .timeline__middle {
+    position: relative;
+    background: #009578;
+  }
+  
+  .timeline__point {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1rem;
+    height: 1rem;
+    background: #009578;
+    border-radius: 50%;
+  }
+  
+  /* LEAVE TILL LAST */
+  .timeline__point--bottom {
+    top: initial;
+    bottom: 0;
+  }
+  
+  .timeline__date--right {
+    text-align: right;
+  }
+
+  .timeline__component .accordion-item{
+      border: 0;
+  }
+  
